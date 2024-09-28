@@ -1,8 +1,9 @@
 # Site-Advocacia
 Saldi Luiz Advocacia - Website
 
-Desenvolvimento de um site de uma advocatura
-.
+Desenvolvimento de um site de uma advocatura.
+Esse projeto usa como base o HTML, CSS e JAVACRIPT.
+Vale ressaltar que todas as informações acima podem ser alteradas com o decorrer do projeto.
 
 Requisitos Funcionais
 
