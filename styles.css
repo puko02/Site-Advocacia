@@ -20,12 +20,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background: linear-gradient(90deg, #333, #555);
     padding: 10px 20px;
 }
 nav .logo {
     color: white;
     font-size: 24px;
+    font-family: 'Playfair Display', serif;
 }
 nav ul {
     display: flex;
@@ -127,3 +128,36 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+    /* Oculta o botão hamburguer por padrão */
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+  
+      .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+      }
+  
+      /* Estilos para telas menores */
+      @media (max-width: 1000px) {
+        .menu-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+        }
+  
+        .menu-links.active {
+          display: flex;
+        }
+  
+        .hamburger {
+          display: flex;
+        }
+      }
+  
