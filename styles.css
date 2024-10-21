@@ -78,15 +78,7 @@ nav ul li a:hover {
     background-color: #ff4500;
 }
 
-/* About Section */
-.about, .services, .contact {
-    padding: 50px 20px;
-    text-align: center;
-}
-.about p {
-    width: 80%;
-    margin: 0 auto;
-}
+
 
 /* Contact Section */
 .contact form {
