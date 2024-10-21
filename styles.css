@@ -12,10 +12,16 @@ body {
 }
 a {
     text-decoration: none;
-    color: rgb(250, 250, 250);
+    color: rgb(255, 255, 255);
 }
 
-/* Navigation Bar */
+header{
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(1, 1, 1, 1.1);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -48,7 +54,6 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
     background: url('https://image-2.uhdpaper.com/wallpaper/galaxy-stars-colorful-space-clouds-4k-wallpaper-uhdpaper.com-177@2@a.jpg') no-repeat center center/cover;
@@ -84,7 +89,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Contact Section */
 .contact form {
     display: flex;
     flex-direction: column;
@@ -102,7 +106,10 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Footer */
+h2{
+    color: #ccc;
+}
+
 footer {
     background-color: #000000;
     color: white;
@@ -113,7 +120,6 @@ footer {
     bottom: 0;
 }
 
-    /* Oculta o botão hamburguer por padrão */
     .hamburger {
         display: none;
         flex-direction: column;
@@ -127,7 +133,6 @@ footer {
         margin: 5px;
       }
   
-      /* Estilos para telas menores */
       @media (max-width: 1000px) {
         .menu-links {
           display: none;
