@@ -84,10 +84,11 @@ nav ul li a:hover {
 }
 
 /* About Section */
-.about, .services, .contact {
+.contact {
     padding: 50px 20px;
     text-align: center;
 }
+<<<<<<< HEAD
 .about p {
     width: 80%;
     margin: 0 auto;
@@ -108,6 +109,8 @@ nav ul li a:hover {
 .service-card h3 {
     margin-bottom: 10px;
 }
+=======
+>>>>>>> b405c48b5d44e12f65ab8f4d429704ec72266a23
 
 .contact form {
     display: flex;
