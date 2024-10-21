@@ -88,23 +88,6 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Services Section */
-.service-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.service-card {
-    background-color: white;
-    padding: 20px;
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.service-card h3 {
-    margin-bottom: 10px;
-}
-
 /* Contact Section */
 .contact form {
     display: flex;
