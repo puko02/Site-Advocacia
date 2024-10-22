@@ -129,6 +129,7 @@ nav ul li a:hover {
 
 h2{
     color: #ccc;
+    text-align: center;
 }
 
 footer {
@@ -136,7 +137,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }

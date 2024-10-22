@@ -7,19 +7,15 @@ Vale ressaltar que todas as informações acima podem ser alteradas com o decorr
 
 Requisitos Funcionais
 
-Cadastro de Usuário:
-O sistema deve permitir que o usuário crie uma conta utilizando nome, e-mail, senha, telefone e CPF.
-O sistema deve enviar um e-mail de confirmação para validar o cadastro do usuário.
-
-Login e Autenticação:
-O sistema deve permitir que o usuário faça login utilizando e-mail e senha.
-O sistema deve ter a opção de recuperação de senha através de e-mail.
+Formulário de consulta de usuário:
+O sistema deve permitir que o usuário crie um requerimento de consulta utilizando nome, e-mail, senha, telefone e CPF.
 
 Agendamento de Consultas:
 O sistema deve permitir que o usuário visualize a agenda disponível dos advogado.
 O sistema deve permitir que o usuário selecione uma data e horário para agendar uma consulta.
 O sistema deve enviar uma notificação por e-mail e/ou SMS confirmando o agendamento.
-O sistema deve permitir o cancelamento ou reagendamento de consultas pelo usuário.
+O sistema deve permitir o cancelamento e ter a opção de reagendamento de consultas pelo usuário.
+O sistema deve cobrar o cancelamento do requerimento de consulta.
 
 Perfil do Advogado:
 O sistema deve exibir o perfil do advogado, incluindo especialidade, anos de experiência, e horário de atendimento disponível.
