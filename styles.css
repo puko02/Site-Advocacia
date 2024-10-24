@@ -13,24 +13,28 @@ body {
 }
 
 a {
-    font-family: 'Playfair Display', serif;
     text-decoration: none;
     font-size: 1.4rem;
     color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255);
     padding: 5px 10px;
-    border-radius: 6px;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
 a:hover {
-    opacity: 0.7;
+    background-color: #000000;
+    color: white;
+    transition: background 0.3s;
 }
 
 .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 38px;
+    font-family: 'Playfair Display', serif;
 }
 
 nav {
@@ -39,8 +43,9 @@ nav {
     align-items: center;
     font-family: system-ui, Helvetica, Arial, sans-serif;
     background: linear-gradient(to right, #000000, #fff563);
-    height: 8vh;
+    height: 3.5rem;
     padding: 10px 20px;
+    box-shadow: 0px 0px 1rem rgba(1, 1, 1, 1.1);
 }
 
 nav .logo {
@@ -147,7 +152,8 @@ header {
 
 .contact form {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 40rem;
     margin: 0 auto;
@@ -207,15 +213,15 @@ footer {
 
     .nav-list {
         position: absolute;
-        top: 8vh;
+        top: 3.5rem;
         right: 0;
-        width: 35vw;
+        width: 30vw;
         height: 92vh;
         background: #000000;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        gap: 20px;
+        gap: 1.5rem;
         transform: translateX(100%);
         transition: transform 0.1s ease-in;
     }
@@ -225,6 +231,12 @@ footer {
         opacity: 0;
     }
 
+
+    .nav-list a:hover {
+        background-color: white;
+        color: black;
+    }
+
     .mobile-menu {
         display: block;
     }
@@ -232,6 +244,7 @@ footer {
 
 .nav-list.active {
     transform: translateX(0);
+    padding-top: 1.5rem;
 }
 
 @keyframes navLinkFade {
