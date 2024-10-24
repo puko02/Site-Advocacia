@@ -1,12 +1,44 @@
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Thank you for your message! We will get back to you soon.");
-});
+class MobileNavbar {
+  constructor(mobileMenu, navList, navLinks) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks);
+    this.activeClass = "active";
 
-    // Função para abrir e fechar o menu ao clicar no ícone de hambúrguer
-    const hamburger = document.getElementById('hamburger');
-    const menuLinks = document.getElementById('menuLinks');
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-    hamburger.addEventListener('click', () => {
-      menuLinks.classList.toggle('active');
+  animateLinks() {
+    this.navLinks.forEach((link, index) => {
+      link.style.animation
+        ? (link.style.animation = "")
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`);
     });
+  }
+
+  handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
+
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+  }
+
+  init() {
+    if (this.mobileMenu) {
+      this.addClickEvent();
+    }
+    return this;
+  }
+}
+
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav-list",
+  ".nav-list li",
+);
+mobileNavbar.init();
