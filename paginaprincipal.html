@@ -30,14 +30,32 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Saldi Luiz Advocacia</h1>
-            <p>Não deixe que o sistema ou as circunstâncias afetem você ou sua vida</p>
-            <a href="#contact" class="btn" style="background-color: goldenrod;">Contate-nos</a>
-        </div>
-    </section>
+    <main style="background-image: url('icons/fundoprincipal.jpg');">
+        <section id="home" class="principal">
+            <div class="principal-content">
+                <h1>Saldi Luiz Advocacia</h1>
+                <p>Não deixe que o sistema ou as circunstâncias afetem você ou sua vida</p>
+                <a href="#contact" class="btn" style="background-color: #fff563;
+                color: #000000;">Contate-nos</a>
+            </div>
+        </section>
 
+        <section id="contact" class="contact-form" >
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 - Saldi Luiz Pauli - All Rights Reserved</p>
