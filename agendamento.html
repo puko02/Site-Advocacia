@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Saldi Luiz Advogacia</title>
+    <title>Saldi Luiz Advocacia</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icons/LOGO-1.png">
@@ -29,13 +29,23 @@
     </header>
 
 
-    <section id="contact" class="contact">
-        <h2>Fale conosco!   </h2>
+    <section id="contact" class="contact"> <br><br>
+        <h2>AGENDANDO SUA CONSULTA   </h2>
         <form id="contactForm">
-            <input type="text" placeholder="Digite seu nome aqui" required>
-            <input type="email" placeholder="Digite seu gmail aqui" required>
-            <textarea placeholder="Digite sua mensagem aqui" required></textarea>
-            <button type="submit" class="btn" style="background-color: goldenrod;">Enviar mensagem</button>
+            <input class="form_cell" type="text" placeholder="Nome Completo" required> <br>
+
+            <input class="form_cell" type="date" id="bday" placeholder="Aniverário"> <br>
+
+            <input type="" class="form_cell" id="cpf" placeholder="CPF" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required> <br>
+
+
+            <input class="form_cell" type="email" placeholder="Email" required> <br>
+
+            <input class="form_cell" type="tel" id="phone" placeholder="Número de Telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required> <br>
+
+            <textarea class="form_cell" type="text" placeholder="Informações Adicionais" rows="7" cols="50"></textarea> <br>
+            
+            <button type="submit" class="btn" style="background-color: goldenrod;">PROSSEGUIR PARA PAGAMENTO</button>
         </form>
     </section>
 
