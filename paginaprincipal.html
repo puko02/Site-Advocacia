@@ -29,7 +29,10 @@
         </nav>
     </header>
 
-    <main style="background-image: url('icons/fundoprincipal.jpg');">
+    <main style="background-image: url('icons/fundoprincipal.jpg');
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; ">
         <section id="home" class="principal">
             <div class="principal-content">
                 <h1>Saldi Luiz Advocacia</h1>
@@ -48,30 +51,30 @@
         <br>
 
         <section id="contact" class="contact-form">
-            <h2 class="Raleway">Contato</h2>
+
+            <!--<h2 class="Raleway">Contato</h2>-->
             <form action="#" method="post">
-                <label for="name" class="Raleway">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email" class="Raleway">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message" class="Raleway">Mensagem:</label>
-                <textarea id="message" name="message" class="Raleway" rows="4" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+                 <!--<label for="name" class="Raleway">Nome:</label>-->
+                <input type="text" class="contact-form_input" name="name" required placeholder="Insira seu nome">
 
-    <footer>
-        <p>&copy; 2024 - Saldi Luiz Pauli - All Rights Reserved</p>
-    </footer>
+                <!--<label for="email" class="Raleway">Email:</label>-->
+                <input type="email" class="contact-form_input" name="email" required placeholder="Insira seu gmail">
 
-    <script src="script.js"></script>
-    <script>
+                <!--<label for="message" class="Raleway">Mensagem:</label>-->
+                 <textarea id="message" name="message" class="Raleway contact-form_input" rows="4" required placeholder="Digite sua mensagem aqui"></textarea>
+                 <button type="submit">Enviar</button>
+             </form>
+         </section>
+     </main>
 
-    </script>
-</body>
+     <footer>
+         <p>&copy; 2024 - Saldi Luiz Pauli - All Rights Reserved</p>
+     </footer>
 
-</html>
+     <script src="script.js"></script>
+     <script>
+
+     </script>
+ </body>
+
+ </html>

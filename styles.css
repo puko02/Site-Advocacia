@@ -154,15 +154,25 @@ header {
 }
 
 .contact-form {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
+    padding: 25px;
+    background: #DADADA;
+    width: 35rem;
     border-radius: 14px;
     margin: 0 auto;
 }
+.contact-form_input{
+border-radius: 500px;
+    border: none;
+    width: 100%;
+    padding: .7rem .5rem;
+    margin-bottom: 1rem;
+    background: #C1C0C0;
+    box-shadow: 0 5px 10px -5px black;
+}
+textarea.contact-form_input{
+    height: 12rem;
+}
+
 
 .Raleway {
     font-family: "Raleway", sans-serif;
@@ -199,7 +209,6 @@ header {
 .contact-form textarea {
     size-adjust: none;
     margin-bottom: 15px;
-    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 14px;
     font-family: "Raleway", sans-serif;
