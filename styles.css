@@ -159,6 +159,7 @@ header {
     width: 35rem;
     border-radius: 14px;
     margin: 0 auto;
+    align-items:    center;
 }
 .contact-form_input{
 border-radius: 500px;
@@ -179,6 +180,14 @@ textarea.contact-form_input{
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+}
+
+.consulta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .contact-form h2 {
