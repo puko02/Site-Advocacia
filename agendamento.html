@@ -11,7 +11,7 @@
     <link rel="icon" href="icons/LOGO-1.png">
 </head>
 
-<body>
+<body style="background: url('icons/fundoAgenda.webp') no-repeat center center fixed; background-size: cover;">
     <header>
         <nav>
             <a class="logo" href="paginaprincipal.html"><img src="icons/LOGO-1.png" alt="Logo"
@@ -24,7 +24,7 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="paginaprincipal.html">Início</a></li>
+                <li><a href="agendamento.html" class="btn">Agende sua consulta</a></li>
                 <li><a href="sobrenos.html">Sobre</a></li>
             </ul>
         </nav>
@@ -33,9 +33,9 @@
 
     <main class="consulta">
         <section id="contact" class="contact-form">
-            <h2>AGENDANDO SUA CONSULTA</h2>
-            <form id="consulta">
-                <input class="form_cell" type="text" placeholder="Nome Completo" required> <br>
+            <h2>AGENDE SUA CONSULTA</h2>
+            <form id="contact">
+                <input class="" type="text" placeholder="Nome Completo" required> <br>
                 <input class="form_cell" type="date" id="bday" placeholder="Aniverário"> <br>
                 <input class="form_cell" type="text" id="cpf" placeholder="CPF"
                     pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required> <br>
@@ -44,7 +44,7 @@
                     pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required> <br>
                 <textarea class="form_cell" type="text" placeholder="Informações Adicionais" rows="7"
                     cols="50"></textarea> <br>
-                <button type="submit" class="btn" style="background-color: goldenrod;">PROSSEGUIR PARA
+                <button type="submit" class="btn">PROSSEGUIR PARA
                     PAGAMENTO</button>
             </form>
         </section>

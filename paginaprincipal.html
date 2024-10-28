@@ -23,7 +23,7 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="agendamento.html">Agende sua consulta</a></li>
+                <li><a href="agendamento.html" class="active">Agende sua consulta</a></li>
                 <li><a href="sobrenos.html">Sobre</a></li>
             </ul>
         </nav>
@@ -36,32 +36,22 @@
         <section id="home" class="principal">
             <div class="principal-content">
                 <h1>Saldi Luiz Advocacia</h1>
-                <p>Não deixe que o sistema ou as circunstâncias afetem você ou sua vida</p>
-                <a href="#contact" class="btn" style="background-color: #fff563;
-                color: #000000;">Contate-nos</a>
+                <h1>Não deixe que o sistema ou as circunstâncias afetem você ou sua vida</h1>
+                <a href="#contact" class="btn" >Contate-nos</a>
+                
+                
             </div>
         </section> 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
         <section id="contact" class="contact-form">
-
+                <h2>FALE CONOSCO</h2>
+                <form id="contact">
             <!--<h2 class="Raleway">Contato</h2>-->
             <form action="#" method="post">
-                 <!--<label for="name" class="Raleway">Nome:</label>-->
-                <input type="text" class="contact-form_input" name="name" required placeholder="Insira seu nome">
-
-                <!--<label for="email" class="Raleway">Email:</label>-->
-                <input type="email" class="contact-form_input" name="email" required placeholder="Insira seu gmail">
-
-                <!--<label for="message" class="Raleway">Mensagem:</label>-->
-                 <textarea id="message" name="message" class="Raleway contact-form_input" rows="4" required placeholder="Digite sua mensagem aqui"></textarea>
+                <input class="form_cell" type="text" placeholder="Nome Completo" required> <br>
+                <input class="form_cell" type="email" placeholder="Email" required> <br>
+                <textarea class="form_cell" type="text" placeholder="Informações Adicionais" rows="7"
+                cols="50"></textarea> <br>
                  <button type="submit" style="background-color: #fff563; color: #000; font-weight: bold;">Enviar</button>
              </form>
          </section>
