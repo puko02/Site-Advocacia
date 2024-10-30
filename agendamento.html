@@ -29,26 +29,27 @@
             </ul>
         </nav>
     </header>
-
-
-    <main class="consulta">
+    <main class="main">
         <section id="contact" class="contact-form">
-            <h2>AGENDE SUA CONSULTA</h2>
+            <h2>AGENDANDO SUA CONSULTA</h2>
             <form id="contact">
-                <input class="" type="text" placeholder="Nome Completo" required> <br>
-                <input class="form_cell" type="date" id="bday" placeholder="Aniverário"> <br>
-                <input class="form_cell" type="text" id="cpf" placeholder="CPF"
-                    pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required> <br>
-                <input class="form_cell" type="email" placeholder="Email" required> <br>
-                <input class="form_cell" type="tel" id="phone" placeholder="Número de Telefone"
-                    pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required> <br>
-                <textarea class="form_cell" type="text" placeholder="Informações Adicionais" rows="7"
-                    cols="50"></textarea> <br>
-                <button type="submit" class="btn">PROSSEGUIR PARA
-                    PAGAMENTO</button>
+                <label for="name">Nome Completo:</label>
+                <input class="form_cell" type="text" id="name" placeholder="Nome Completo" required> <br>
+                <label for="bday">Aniversário:</label>
+                <input class="form_cell" type="date" id="bday" placeholder="Aniversário"> <br>
+                <label for="cpf">CPF:</label>
+                <input class="form_cell" type="text" id="cpf" placeholder="CPF" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required> <br>
+                <label for="email">Email:</label>
+                <input class="form_cell" type="email" id="email" placeholder="Email" required> <br>
+                <label for="phone">Número de Telefone:</label>
+                <input class="form_cell" type="tel" id="phone" placeholder="Número de Telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required> <br>
+                <label for="message">Informações Adicionais:</label>
+                <textarea class="form_cell" id="message" placeholder="Informações Adicionais" rows="7" cols="50"></textarea> <br>
+                <button type="submit" class="btn" style="background-color: goldenrod;">PROSSEGUIR PARA PAGAMENTO</button>
             </form>
         </section>
     </main>
+    
 
     <footer>
         <p>&copy; 2024 - Saldi Luiz Pauli - All Rights Reserved</p>
