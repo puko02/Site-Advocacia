@@ -199,6 +199,7 @@ h3 {
     width: 50%;
     border-radius: 20px;
     box-shadow: 0 5px 10px 3px black;
+    margin: 0% auto;
 }
 
 .contact-form_input {
