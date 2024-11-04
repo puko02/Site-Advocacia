@@ -6,9 +6,9 @@
 }
 
 .main {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    height: 92vh;
+    /* height: 92vh; */
     
 
 }
@@ -116,7 +116,7 @@ nav .logo {
 
 header {
     padding: 0rem;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     box-shadow: 0px 0px 1rem rgba(1, 1, 1, 1.1);
 }
@@ -188,9 +188,8 @@ h3 {
 .contact {
     display: flex;
     flex-direction: column;
-    height: 250px;
     border: 1px solid #000;
-
+    
 }
 
 .contact-form {
@@ -200,6 +199,8 @@ h3 {
     border-radius: 20px;
     box-shadow: 0 5px 10px 3px black;
     margin: 0 auto;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
 }
 
 .contact-form_input {
