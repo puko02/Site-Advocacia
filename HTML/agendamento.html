@@ -37,17 +37,15 @@
             <form id="contactForm">
                 <label for="name">Nome Completo:</label>
                 <input class="form_cell" type="text" id="name" placeholder="Nome Completo" required> <br>
-                <label for="bday">Aniversário:</label>
-                <input class="form_cell" type="date" id="bday" placeholder="Aniversário"> <br>
-                <label for="cpf">CPF:</label>
-                <input class="form_cell" type="text" id="cpf" placeholder="CPF" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required> <br>
+                <label for="consultation">Dia da Consulta:</label>
+                <input class="form_cell" type="date" id="consultation" placeholder="Selecione o dia que deseja ter a consulta"> <br>
                 <label for="email">Email:</label>
                 <input class="form_cell" type="email" id="email" placeholder="Email" required> <br>
                 <label for="phone">Número de Telefone:</label>
-                <input class="form_cell" type="tel" id="phone" placeholder="Número de Telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required> <br>
+                <input class="form_cell" type="tel" id="phone" placeholder="12 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required> <br>
                 <label for="message">Informações Adicionais:</label>
                 <textarea class="form_cell" id="message" placeholder="Informações Adicionais" rows="7" cols="50"></textarea> <br>
-                <button type="submit" class="btn" style="background-color: goldenrod;">PROSSEGUIR PARA PAGAMENTO</button>
+                <button type="submit" class="btn" style="background-color: goldenrod;" onclick="getInfo()">PROSSEGUIR PARA PAGAMENTO</button>
             </form>
         </section>
 

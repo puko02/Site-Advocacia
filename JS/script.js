@@ -43,3 +43,23 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
+
+
+function getInfo(){
+
+const name = document.getElementById('name').value;
+const consultationDay = document.getElementById('consultation').value;
+const email = document.getElementById('email').value;
+const phone = document.getElementById('phone').value;
+const message = document.getElementById('message').value;
+
+const clientData = {
+  name,
+  consultationDay,
+  email,
+  phone,
+  message
+};
+JSON.stringify(clientData);
+window.location.href = 'http://127.0.0.1:5501/HTML/pagamento.html';
+}
