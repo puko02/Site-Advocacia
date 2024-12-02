@@ -134,6 +134,12 @@ header {
     align-items: center;
 }
 
+.principal .btn{
+    height: 5vh;
+    width: 28vw;
+    display: inline-flex;
+}
+
 h1 {
 
     font-family: 'Playfair Display', serif;
@@ -381,10 +387,15 @@ footer {
 .socialmedia-class {
     padding: 30px 30px;
     background: white;
-    width: 50%;
+    width: 40vw;
     border-radius: 20px;
     box-shadow: 0 5px 10px 3px black;
     margin: 0 auto;
     margin-top: 7vh;
     margin-bottom: 3vh;
+}
+
+.socialmedia-class p{
+    font-size: 1.5rem;
+    text-align: center;
 }
