@@ -60,6 +60,6 @@ function getInfo() {
 
   const clientDataJson = JSON.stringify(clientData);
   localStorage.setItem('clientData', clientDataJson);
-  window.location.href = '/HTML/pagamento.html';
+  window.location.href = '/pages/pagamento.html';
 }
 document.getElementById('submit').addEventListener('click', getInfo);
