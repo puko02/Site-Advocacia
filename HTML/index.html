@@ -23,10 +23,6 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul class="nav-list">
-                <li><a href="/HTML/agendamento.html" class="active">Agende sua consulta</a></li>
-                <li><a href="/HTML/sobrenos.html">Sobre</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -37,20 +33,75 @@
                 <h2>Não deixe que o sistema ou as circunstâncias afetem você ou sua vida</h2>
                 <p>Estamos aqui para ajudar você a resolver seus problemas previdenciários</p>
                 <br>
-                <a href="#contact" class="btn" style="background-color: rgba(255, 245, 99, 1); transition: 0.3s;">Contate-nos</a>
+                <a href="#contact" class="btn" style="background-color: rgba(255, 245, 99, 1); transition: 0.3s;">Agende sua consulta</a>
             </div>
         </section>
 
-        <section id="contact-form" class="contact-form">
-            <h2>FALE CONOSCO</h2>
-            <form id="contact">
-                <form action="#" method="post">
-                    <input class="form_cell" type="text" placeholder="Nome Completo" required> <br>
-                    <textarea class="form_cell" type="text" placeholder="Informações Adicionais" rows="7"
-                        cols="50"></textarea> <br>
-                    <button class="btn" type="submit" style="font-size: 1.5rem;">Enviar</button>
-                </form>
+        <section>
+            <div style=" background-color: #ffffff4c; margin-left: 42vw; width: 225px; height: 31px; border-radius: 15px;">                                                                                  
+                <h1 style=" padding-left: 1.5vw; color: white; display: flex vh; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 3.5vh;  margin-top: 5vh;">Nossos serviços</h1>
+    
+            </div>
+            <div class="service-container">
+                <div class="service-card">
+                    <h3>Confiabilidade</h3>
+                    <p>Compromisso com a segurança e confidencialidade dos dados dos clientes, assegurando que todas as
+                        informações são tratadas com a máxima integridade.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Responsabilidade</h3>
+                    <p>Responsabilidade em cada etapa do processo, garantindo que o cliente está bem-informado e que todas
+                        as medidas são tomadas com transparência e ética.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Especialização Jurídica</h3>
+                    <p>Conhecimento aprofundado nas áreas de atuação, com experiência em diferentes campos do Direito,
+                        oferecendo assessoria jurídica de qualidade.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Empatia e Respeito</h3>
+                    <p>Atendimento humanizado, buscando entender a situação e os objetivos do cliente com empatia, respeito
+                        e atenção aos detalhes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Eficiência</h3>
+                    <p>Agilidade nos processos, com foco em alcançar resultados efetivos, proporcionando ao cliente um
+                        atendimento rápido e eficaz.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Comprometimento com Resultados</h3>
+                    <p>Foco em resultados positivos, buscando sempre a melhor solução para cada caso, com dedicação e
+                        estratégia.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Acompanhamento Contínuo</h3>
+                    <p>Disponibilidade para esclarecer dúvidas e manter o cliente atualizado sobre o andamento do seu caso,
+                        desde o início até a conclusão.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Transparência</h3>
+                    <p>Comunicação clara e direta, mantendo o cliente informado sobre os processos, custos e prazos de forma
+                        transparente.</p>
+                </div>
+            </div>
         </section>
+
+        <section id="contact" class="contact-form">
+            <h2>AGENDANDO SUA CONSULTA</h2>
+            <form id="contactForm">
+                <label for="name">Nome Completo:</label>
+                <input class="form_cell" type="text" id="name" placeholder="Nome Completo" required> <br>
+                <label for="consultation">Dia da Consulta:</label>
+                <input class="form_cell" type="date" id="consultation" placeholder="Selecione o dia que deseja ter a consulta"> <br>
+                <label for="phone">Número de Telefone:</label>
+                <input class="form_cell" type="tel" id="phone" placeholder="12 12345-1234" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required> <br>
+                <label for="message">Informações Adicionais:</label>
+                <textarea class="form_cell" id="message" placeholder="Informações Adicionais" rows="7" cols="50"></textarea> <br>
+                <button type="submit" class="btn" style="background-color: rgba(255, 245, 99, 1);" id="submit">PROSSEGUIR PARA PAGAMENTO</button>
+            </form>
+        </section>
+
+
     </main>
 
     <footer>

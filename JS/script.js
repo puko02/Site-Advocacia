@@ -45,21 +45,21 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 
-function getInfo(){
+function getInfo() {
+  const name = document.getElementById('name').value;
+  const consultationDay = document.getElementById('consultation').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
 
-const name = document.getElementById('name').value;
-const consultationDay = document.getElementById('consultation').value;
-const email = document.getElementById('email').value;
-const phone = document.getElementById('phone').value;
-const message = document.getElementById('message').value;
+  const clientData = {
+    name,
+    consultationDay,
+    phone,
+    message
+  };
 
-const clientData = {
-  name,
-  consultationDay,
-  email,
-  phone,
-  message
-};
-JSON.stringify(clientData);
-window.location.href = 'http://127.0.0.1:5501/HTML/pagamento.html';
+  const clientDataJson = JSON.stringify(clientData);
+  localStorage.setItem('clientData', clientDataJson);
+  window.location.href = '/HTML/pagamento.html';
 }
+document.getElementById('submit').addEventListener('click', getInfo);
