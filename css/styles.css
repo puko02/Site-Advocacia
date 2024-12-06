@@ -13,6 +13,9 @@
 
 }
 
+ul{
+    list-style-type: none;
+}
 a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -27,12 +30,16 @@ a {
     justify-content: space-between;
 }
 
-a:hover {
-    background-color: #000000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    color: white;
-    font-size: 1.7rem;
+h1 {
+    font-family: 'Playfair Display', serif;
 }
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
 
 .btn {
     font-size: 1.5rem;
@@ -45,38 +52,20 @@ a:hover {
 }
 
 .btn:hover {
-    background-color: black;
-    box-shadow: 0 0 10px rgba(1, 1, 1, 1);
-    color: black;
-    font-size: 1.6rem;
+    scale: 1.05;
 }
 
-.logo {
-    display: flex;
-    gap: 10px;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px rgb(255, 255, 255);
-    font-size: 2.5rem;
-    font-family: 'Playfair Display', serif;
-    align-items: center;
-    box-shadow: none;
-    white-space: nowrap;
-}
-
-.logo:hover {
-    text-shadow: 0 0 15px rgb(255, 255, 255);
-    font-size: 2.5rem;
-    box-shadow: none;
-}
-
+/*navbar*/
 nav {
+    position: fixed;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-items: center;
     font-family: system-ui, Helvetica, Arial, sans-serif;
-    background: linear-gradient(to right, #000000, #fff563);
-    min-height: 4.5rem;
+    background: linear-gradient(to right, #000000 10%, #fff563);
     box-sizing: border-box;
     padding: 10px 25px;
     box-shadow: 0 0 1rem rgba(1, 1, 1, 1.1);
@@ -85,131 +74,115 @@ nav {
 nav .logo {
     background: none
 }
-
-.nav-list {
-    list-style: none;
+.logo {
     display: flex;
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
     align-items: center;
-}
-
-.nav-list li {
-    letter-spacing: 1px;
-    margin-left: 24px;
-}
-
-header {
+    box-shadow: none;
+    white-space: nowrap;
     padding: 0;
-    /* position: fixed; */
-    width: 100%;
-    box-shadow: 0 0 1rem rgba(1, 1, 1, 1.1);
+
 }
 
-.home {
-    background-color: #f0f0f0;
-    padding: 20vh;
+.logo:hover {
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    font-size: 2.5rem;
+    box-shadow: none;
 }
 
+
+/*header*/
 .principal {
     height: 100vh;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.principal .btn{    
-    height: vh;
-    width: 30vw;
-    display: inline-flex;
-}
-
-h1 {
-
-    font-family: 'Playfair Display', serif;
-}
-
-.principal-content {
     text-align: center;
+    padding: 0 16px;
 }
+
+.principal .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    background-color: #E8DF5B;
+    transition: 0.3s;
+
+}
+
 
 .principal h1 {
     font-size: 48px;
+    margin-bottom: 16px;
+}
+.principal h2{
+    margin-bottom: 12px;
 }
 
 .principal p {
     font-size: 18px;
-    margin: 20px 0;
+    margin-bottom: 12px;
 }
 
+
+/*???*/
 .about p {
     width: 20%;
     margin: 0 auto;
 }
 
+/*main*/
+
+/*section "Nossos serviços"*/
+
 .service-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5rem;
     flex-wrap: wrap;
-    min-height: 92vh;
-    padding: 20px;
     box-sizing: border-box;
 }
 
-h3 {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
 
 .service-card {
     font: 1.3rem 'Raleway', serif;
     text-align: justify;
-    width: 60vh;
+    min-height: 200px;
     max-width: 400px;
-    margin: 40px 30px;
     padding: 25px;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 1);
     background-color: white;
     border-radius: 20px;
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #000;
-    
-}
+/*section "AGENDANDO SUA CONSULTA"*/
 
 .contact-form {
-    padding: 2.5vh 2.5vw;
+    padding: 2rem;
     background: white;
-    width: 85vh;
+    max-width: 40rem;
     border-radius: 30px;
-    box-shadow: 0 5px 10px 3px black;
-    margin: 7vh  auto 3vh auto;
-}
-
-.contact-form_input {
-    border: none;
-    width: 100%;
-    padding: .7rem .5rem;
-    margin-bottom: 1rem;
-    background: #1f1f1f;
-    box-shadow: 0 5px 10px -5px rgb(253, 0, 0);
+    margin:auto;
+    box-shadow: 0 0 10px 1px black;
 }
 
 .form_cell {
     display: flex;
     flex-direction: column;
-    width: vh;
     padding: 15px;
     background: #e6e6e6;
     font-size: 1.2rem;
     border-radius: 26px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border: none;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 1);
 }
 
 .contact-form h2 {
@@ -252,6 +225,7 @@ h3 {
     cursor: pointer;
 }
 
+/*footer*/
 
 footer {
     background-color: #000000;
@@ -262,78 +236,9 @@ footer {
     bottom: 0;
 }
 
-@media (max-width: 999px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .nav-list {
-        position: absolute;
-        top: 4.5rem;
-        right: 0;
-        width: 30vw;
-        height: 92vh;
-        background: linear-gradient(to top, #000000, #fff563);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 1.5rem;
-        transform: translateX(100%);
-        transition: transform 0.1s ease-in;
-    }
-
-    .nav-list li {
-        align-items: center;
-        opacity: 0;
-    }
-
-    .nav-list a {
-        width: 100%;
-
-    }
-
-    .nav-list a:hover {
-        background-color: #000000;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        color: white;
-        font-size: 1.5rem;
-    }
-
-    .nav-list .btn:hover {
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0 0 10px rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        font-size: 1.6rem;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .nav-list.active {
-        transform: translateX(0);
-        padding-top: 1.5rem;
-        align-items: center;
-
-    }
-}
 
 
-
-
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
+/*burger*/
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
 }
